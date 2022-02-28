@@ -41,7 +41,7 @@ for i=1:length(T_H)
     end
 end
 % Calculate the COP-value for each day.
-COP = 1 ./ (1-T_L./T_H);
-
+COP = 1 ./ (1-(T_L+273.15)./(T_H+273.15));
+% COP = 1 ./ (1-T_L./T_H);
 
 end
